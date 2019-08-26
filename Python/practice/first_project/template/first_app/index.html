@@ -1,12 +1,16 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>
     <title>Document</title>
 </head>
 <body>
+    <h1>Hi, this is a picture!!!</h1>
+    <img src="{% static "image/1.jpg" %}" alt="Uh Oh, did not shown!">
     {{insert_me}}
 </body>
 </html>
