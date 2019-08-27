@@ -1,5 +1,5 @@
 import os  
-os.environ.setdefault('DJANGO_SETTING_MODULE', 'first_project.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'first_project.settings')
 
 import django
 django.setup()
@@ -39,3 +39,8 @@ def populate(N=5):
 
         #create a fake access
         acc_rec = AccessRecord.objects.get_or_create(name=webpg, date=fake_date)[0]
+
+if __name__ == "__main__":
+    print("populating script!")
+    populate(20)
+    print("Populating complete!")
