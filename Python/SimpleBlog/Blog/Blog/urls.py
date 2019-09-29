@@ -17,6 +17,9 @@ from django.contrib import admin
 from django.urls import path
 from blog_app import views
 urlpatterns = [
+    path('', views.linkedin, name='linkedin'),
+    path('', views.github, name='github'),
+    path('', views.about, name='about'),
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
 ]
